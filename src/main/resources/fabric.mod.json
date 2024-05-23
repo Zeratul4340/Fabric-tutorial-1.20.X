@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "This is a tutorial mod, made by Zeratul4340 with the help of KaupenJoe.",
+	"authors": [
+		"Zeratul4340"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorialmod/64x64 overmind.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.zeratul4340.tutorialmod.TutorialMod"
+		],
+		"client": [
+			"net.zeratul4340.tutorialmod.TutorialModClient"
+		],
+		"fabric-datagen": [
+			"net.zeratul4340.tutorialmod.TutorialModDataGenerator"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
