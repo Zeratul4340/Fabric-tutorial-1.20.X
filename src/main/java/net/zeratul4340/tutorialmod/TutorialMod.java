@@ -2,6 +2,9 @@ package net.zeratul4340.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.zeratul4340.tutorialmod.block.ModBlocks;
+import net.zeratul4340.tutorialmod.item.ModItemGroups;
+import net.zeratul4340.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,5 +15,9 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Knowledge through... disintegration");
+
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
