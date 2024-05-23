@@ -1,6 +1,9 @@
 {
-  "item.tutorialmod.ruby": "Ruby",
-  "item.tutorialmod.raw_ruby": "Raw Ruby",
+  "item.tutorialmod.ruby": "Cut Rubedo",
+  "item.tutorialmod.raw_ruby": "Raw Rubedo",
+
+  "block.tutorialmod.ruby_block": "Block of Rubedo",
+  "block.tutorialmod.raw_ruby_block": "Compacted Rubedo",
 
   "itemgroup.ruby": "Ruby Tutorial Group"
 }
