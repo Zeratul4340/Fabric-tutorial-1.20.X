@@ -5,5 +5,10 @@
   "block.tutorialmod.ruby_block": "Block of Rubedo",
   "block.tutorialmod.raw_ruby_block": "Compacted Rubedo",
 
-  "itemgroup.ruby": "Ruby Tutorial Group"
+  "block.tutorialmod.ruby_ore": "Rubedo Ore",
+  "block.tutorialmod.deepslate_ruby_ore": "Deepslate Rubedo Ore",
+  "block.tutorialmod.nether_ruby_ore": "Netherrack Rubedo Ore",
+  "block.tutorialmod.end_stone_ruby_ore": "End Rubedo Ore",
+
+  "itemgroup.ruby": "Tab of the Rubedo"
 }
