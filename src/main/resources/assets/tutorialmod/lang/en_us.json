@@ -1,15 +1,15 @@
 {
   "item.tutorialmod.ruby": "Cut Rubedo",
   "item.tutorialmod.raw_ruby": "Raw Rubedo",
-  "item.tutorialmod.metal_detector": "Ore Scanner",
+  "item.tutorialmod.metal_detector": "Metal Detector",
 
   "block.tutorialmod.ruby_block": "Block of Rubedo",
   "block.tutorialmod.raw_ruby_block": "Compacted Rubedo",
 
   "block.tutorialmod.ruby_ore": "Rubedo Ore",
   "block.tutorialmod.deepslate_ruby_ore": "Deepslate Rubedo Ore",
-  "block.tutorialmod.nether_ruby_ore": "Netherrack Rubedo Ore",
+  "block.tutorialmod.nether_ruby_ore": "Nether Rubedo Ore",
   "block.tutorialmod.end_stone_ruby_ore": "End Rubedo Ore",
 
-  "itemgroup.ruby": "Tab of the Rubedo"
+  "itemgroup.ruby": "KaupenJoe Tutorial Group"
 }
