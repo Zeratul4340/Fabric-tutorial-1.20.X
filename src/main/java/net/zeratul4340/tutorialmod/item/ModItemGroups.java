@@ -31,6 +31,8 @@ public class ModItemGroups {
 
                         entries.add((ModBlocks.SOUND_BLOCK));
 
+                        entries.add(ModItems.TOMATO);
+
                     }).build());
 
     public static void  registerItemGroups() {
