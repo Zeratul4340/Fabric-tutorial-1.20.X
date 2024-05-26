@@ -19,6 +19,7 @@ public class SoundBlock extends Block {
     Note for later: THIS IS A VERY BASIC FUNCTIONAL BLOCK. REMEMBER TO LOOK BACK HERE WHEN MAKING THE WORMHOLE PAD.
 
     Also make sure to check net.minecraft.entity and figure out how requestTeleport works.
+    Also check net.minecraft.Block, net.minecraft.AbstractBlock
      */
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
