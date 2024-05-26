@@ -2,6 +2,7 @@ package net.zeratul4340.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.zeratul4340.tutorialmod.block.ModBlocks;
 import net.zeratul4340.tutorialmod.item.ModItemGroups;
 import net.zeratul4340.tutorialmod.item.ModItems;
@@ -19,5 +20,7 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.COMPACTED_COAL, 16000);
 	}
 }
