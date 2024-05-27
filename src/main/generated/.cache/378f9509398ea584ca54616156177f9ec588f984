@@ -1,0 +1,8 @@
+// 1.20.6	2024-05-27T01:40:58.3849109	Tutorial Mod/Block Loot Tables
+d95d2628ff4385f9b3fa3947a488dc8b88954d0e data\tutorialmod\loot_tables\blocks\deepslate_ruby_ore.json
+f521865bbfd77d44d503357c3f96a8db61c8b707 data\tutorialmod\loot_tables\blocks\end_stone_ruby_ore.json
+6cbee860a058aff1471e8886d74965f5a072e318 data\tutorialmod\loot_tables\blocks\raw_ruby_block.json
+cc949d0a6d37d42537b3f6a8856eca6dfd258e66 data\tutorialmod\loot_tables\blocks\sound_block.json
+4967e8e66158ceae79f8e5f73a23789bd9a3c364 data\tutorialmod\loot_tables\blocks\nether_ruby_ore.json
+e10b58ff9a7f9df85b67b7807d5ae423e7a759f8 data\tutorialmod\loot_tables\blocks\ruby_block.json
+1b475a7406c73f8d7b43ad2ccdded1ded94d41c9 data\tutorialmod\loot_tables\blocks\ruby_ore.json
