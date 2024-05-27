@@ -1,9 +1,6 @@
 package net.zeratul4340.tutorialmod.block;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -31,6 +28,28 @@ public class ModBlocks {
 
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
             new SoundBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
+
+    public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
+            new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(), AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block RUBY_SLAB = registerBlock("ruby_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
+    public static final Block RUBY_BUTTON = registerBlock("ruby_button",
+            new ButtonBlock(BlockSetType.CHERRY, 10, AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
+    public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
+            new PressurePlateBlock(BlockSetType.IRON,AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
+
+    public static final Block RUBY_FENCE = registerBlock("ruby_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block RUBY_FENCE_GATE = registerBlock("ruby_fence_gate",
+            new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block RUBY_WALL = registerBlock("ruby_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
+    public static final Block RUBY_DOOR = registerBlock("ruby_door",
+            new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.IRON_DOOR)));
+    public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
+            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.IRON_TRAPDOOR)));
 
 
     private static Block registerBlock(String name, Block block) {

@@ -6,6 +6,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -43,5 +44,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem( ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SOUND_BLOCK)));
+
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_WALL, ModItems.RUBY);
+        offerPressurePlateRecipe(exporter, ModBlocks.RUBY_PRESSURE_PLATE, ModItems.RUBY);
+        createStairsRecipe(ModBlocks.RUBY_STAIRS, Ingredient.ofItems(ModItems.RUBY))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_STAIRS)));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_SLAB, Ingredient.ofItems(ModItems.RUBY))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_SLAB)));
+
+
+        createDoorRecipe(ModBlocks.RUBY_DOOR, Ingredient.ofItems(ModItems.RUBY))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_DOOR)));
+        createTrapdoorRecipe(ModBlocks.RUBY_TRAPDOOR, Ingredient.ofItems(ModItems.RUBY))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_TRAPDOOR)));
+
+        createFenceRecipe(ModBlocks.RUBY_FENCE, Ingredient.ofItems(ModItems.RUBY))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_FENCE)));
+        createFenceGateRecipe(ModBlocks.RUBY_FENCE_GATE, Ingredient.ofItems(ModItems.RUBY))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_FENCE_GATE)));
+
     }
 }

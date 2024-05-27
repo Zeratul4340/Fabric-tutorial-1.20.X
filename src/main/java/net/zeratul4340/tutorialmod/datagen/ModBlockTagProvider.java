@@ -2,6 +2,7 @@ package net.zeratul4340.tutorialmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Block;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -50,5 +51,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.END_STONE_RUBY_ORE);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")));
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.RUBY_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.RUBY_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.RUBY_WALL);
     }
 }

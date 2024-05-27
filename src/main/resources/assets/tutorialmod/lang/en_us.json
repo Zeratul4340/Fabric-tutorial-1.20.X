@@ -15,6 +15,16 @@
 
   "block.tutorialmod.sound_block": "Definitely Not a Note Block",
 
+  "block.tutorialmod.ruby_stairs": "Rubedo Stairs",
+  "block.tutorialmod.ruby_slab": "Rubedo Slab",
+  "block.tutorialmod.ruby_button": "Rubedo Button",
+  "block.tutorialmod.ruby_pressure_plate": "Rubedo Pressure Plate",
+  "block.tutorialmod.ruby_fence": "Rubedo Fence",
+  "block.tutorialmod.ruby_fence_gate": "Rubedo Gate",
+  "block.tutorialmod.ruby_wall": "Rubedo Wall",
+  "block.tutorialmod.ruby_door": "Rubedo Door",
+  "block.tutorialmod.ruby_trapdoor": "Rubedo Trapdoor",
+
   "itemgroup.ruby": "KaupenJoe Tutorial Group",
 
   "tooltip.tutorialmod.metal_detector.tooltip" : "Finds vanilla metals underground",
