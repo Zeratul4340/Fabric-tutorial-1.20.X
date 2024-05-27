@@ -12,6 +12,7 @@ import net.minecraft.item.ItemUsageContext;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.zeratul4340.tutorialmod.util.ModTags;
 
 import java.util.List;
 
@@ -36,18 +37,17 @@ public class MetalDetectorItem extends Item {
                 BlockState state = context.getWorld().getBlockState(positionClicked.down(i));
 
                 if (i == 0 && isValuableBlock(state)) {
+                    assert player != null;
                     player.sendMessage(Text.literal("You're looking at an exposed metal ore..."));
                     continue;
                 }
                 /*
                 Displays valuable metals.
 
-                Maybe for later I should make it scan tags instead of specific blocks,
-                and also just store the scanned ores in list. Also remove coords because they're moot.
-
-                Intent: "Found 2 Iron ores, 0 Copper ores, 1 Gold ores"
+                Intent for later: "Found 2 Iron ores, 0 Copper ores, 1 Gold ores"
                 */
                 if(isValuableBlock(state)) {
+                    assert player != null;
                     outputValuableCoordinates(positionClicked.down(i), player, state.getBlock());
                     foundBlock = true;
                 }
@@ -82,7 +82,7 @@ public class MetalDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.DEEPSLATE_IRON_ORE) || state.isOf(Blocks.COPPER_ORE) || state.isOf(Blocks.DEEPSLATE_COPPER_ORE) || state.isOf(Blocks.GOLD_ORE) || state.isOf(Blocks.DEEPSLATE_GOLD_ORE);
+        return state.isIn(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS);
     }
 
     @Override
