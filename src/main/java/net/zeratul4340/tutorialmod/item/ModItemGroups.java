@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.COMPACTED_COAL);
 
                         entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModItems.RUBY_STAFF);
 
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RUBY_SLAB);
