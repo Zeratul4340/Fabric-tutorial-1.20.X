@@ -31,6 +31,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.REDSTONE_ORES)
                 .forceAddTag(BlockTags.COAL_ORES);
 
+        getOrCreateTagBuilder(ModTags.Blocks.INCORRECT_FOR_RUBY_TOOL)
+                .forceAddTag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL);
+
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RAW_RUBY_BLOCK)
                 .add(ModBlocks.RUBY_BLOCK)

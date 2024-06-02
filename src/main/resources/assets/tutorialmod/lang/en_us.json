@@ -5,6 +5,11 @@
   "item.tutorialmod.metal_detector": "Metal Detector",
   "item.tutorialmod.ruby_staff": "Staff of Rubedo",
   "item.tutorialmod.tomato": "Regrowth Tomato",
+  "item.tutorialmod.ruby_pickaxe": "Rubedo Pickaxe",
+  "item.tutorialmod.ruby_axe": "Rubedo Axe",
+  "item.tutorialmod.ruby_hoe": "Rubedo Hoe",
+  "item.tutorialmod.ruby_shovel": "Rubedo Shovel",
+  "item.tutorialmod.ruby_sword": "Rubedo Blade",
 
   "block.tutorialmod.ruby_block": "Block of Rubedo",
   "block.tutorialmod.raw_ruby_block": "Compacted Rubedo",

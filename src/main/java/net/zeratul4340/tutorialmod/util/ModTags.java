@@ -10,6 +10,8 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> METAL_DETECTOR_DETECTABLE_BLOCKS =
                 createTag("metal_detector_detectable_blocks");
+        public static final TagKey<Block> INCORRECT_FOR_RUBY_TOOL =
+                createTag("incorrect_for_ruby_tool");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(TutorialMod.MOD_ID, name));
