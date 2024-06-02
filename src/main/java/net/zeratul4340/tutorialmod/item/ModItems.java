@@ -42,6 +42,16 @@ public class ModItems {
         entries.add(RUBY);
         entries.add(RAW_RUBY);
     }
+    private static void addItemsToToolTabItemGroup(FabricItemGroupEntries entries) {
+        entries.add(RUBY_PICKAXE);
+        entries.add(RUBY_AXE);
+        entries.add(RUBY_HOE);
+        entries.add(RUBY_SHOVEL);
+    }
+    private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries) {
+        entries.add(RUBY_SWORD);
+        entries.add(RUBY_AXE);
+    }
 
     private static Item registerItem(String name,  Item item) {
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
@@ -51,6 +61,8 @@ public class ModItems {
         TutorialMod.LOGGER.info("Registering items for" + TutorialMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatTabItemGroup);
     }
 
 }
