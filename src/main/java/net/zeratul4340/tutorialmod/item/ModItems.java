@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.zeratul4340.tutorialmod.TutorialMod;
 import net.zeratul4340.tutorialmod.item.custom.MetalDetectorItem;
+import net.zeratul4340.tutorialmod.item.custom.ModArmorItem;
 
 public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings()));
@@ -32,7 +33,7 @@ public class ModItems {
 
 
     public static final Item RUBY_HELMET = registerItem("ruby_helmet",
-            new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(35))));
+            new ModArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(35))));
     public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate",
             new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(35))));
     public static final Item RUBY_LEGGINGS = registerItem("ruby_leggings",
