@@ -11,6 +11,11 @@
   "item.tutorialmod.ruby_shovel": "Rubedo Shovel",
   "item.tutorialmod.ruby_sword": "Rubedo Blade",
 
+  "item.tutorialmod.ruby_helmet": "Rubedo Helmet",
+  "item.tutorialmod.ruby_chestplate": "Rubedo Chestplate",
+  "item.tutorialmod.ruby_leggings": "Rubedo Leggings",
+  "item.tutorialmod.ruby_boots": "Rubedo Boots",
+
   "block.tutorialmod.ruby_block": "Block of Rubedo",
   "block.tutorialmod.raw_ruby_block": "Compacted Rubedo",
 

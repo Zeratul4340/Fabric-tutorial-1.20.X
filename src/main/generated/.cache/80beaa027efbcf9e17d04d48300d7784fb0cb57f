@@ -1,6 +1,6 @@
-// 1.20.6	2024-06-01T19:33:36.764944	Tutorial Mod/Tags for minecraft:block
-4330dfe33d16f7c929bc8baa117d71757af84824 data\minecraft\tags\blocks\needs_iron_tool.json
+// 1.20.6	2024-06-03T20:52:53.5747448	Tutorial Mod/Tags for minecraft:block
 edb717ba8ce70db0f1c3d09fbaab29aed6d4e5ff data\tutorialmod\tags\blocks\incorrect_for_ruby_tool.json
+4330dfe33d16f7c929bc8baa117d71757af84824 data\minecraft\tags\blocks\needs_iron_tool.json
 5e799cd59014030a55ad601243d14df5d4e1a309 data\minecraft\tags\blocks\mineable\pickaxe.json
 a4294123f7f371444f081e1c96232753d00441fd data\minecraft\tags\blocks\walls.json
 2027697e8146c81a04b2b16b27b2b44bf4bbe316 data\minecraft\tags\blocks\fences.json
