@@ -2,6 +2,7 @@ package net.zeratul4340.tutorialmod.item;
 
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -17,9 +18,12 @@ import java.util.function.Supplier;
 
 /**
  * AHAHAHAHAH I HAD TO MAKE MY OWN ArmorMaterials CLASS BULLSHIT!!!!!!!!!
- *
+ *<p>
  * Anyways yeah I made this referencing Mojang's own ArmorMaterials where it was in fact NOT an Enum but a normal class file.
  * Extending ArmorMaterials resulted in an error, so I just declared my own exact clone, just without the getDefault method.
+ * </p>
+ *
+ * Also I put the 3D Armor textures in assets/minecraft/models/armor because lazy.
  */
 
 public class ModArmorMaterials{
