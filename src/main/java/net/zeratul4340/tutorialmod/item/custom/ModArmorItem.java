@@ -14,6 +14,11 @@ import net.zeratul4340.tutorialmod.item.ModArmorMaterials;
 
 import java.util.Map;
 
+/**
+ * All this exists to do is that it gives the player Haste 5
+ * when you have a full Ruby armor set
+ */
+
 public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())

@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.function.Supplier;
 
 /**
- * AHAHAHAHAH I HAD TO MAKE MY OWN ArmorMaterials CLASS BULLSHIT!!!!!!!!!
+ * AHAHAHAHAH I HAD TO MAKE MY OWN ArmorMaterials CLASS!!!!!!!!!
  *<p>
  * Anyways yeah I made this referencing Mojang's own ArmorMaterials where it was in fact NOT an Enum but a normal class file.
  * Extending ArmorMaterials resulted in an error, so I just declared my own exact clone, just without the getDefault method.
