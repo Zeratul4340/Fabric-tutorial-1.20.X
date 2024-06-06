@@ -38,6 +38,8 @@
 
   "itemgroup.ruby": "KaupenJoe Tutorial Group",
 
+  "effect.tutorialmod.disintegration": "Disintegration",
+
   "tooltip.tutorialmod.metal_detector.tooltip" : "Finds vanilla metals underground",
   "tooltip.tutorialmod.sound_block.tooltip": "...plink plink plink plink plink..."
 }

@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.zeratul4340.tutorialmod.block.ModBlocks;
+import net.zeratul4340.tutorialmod.effect.ModEffects;
 import net.zeratul4340.tutorialmod.item.ModItemGroups;
 import net.zeratul4340.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -20,6 +21,7 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModEffects.registerEffects();
 
 		FuelRegistry.INSTANCE.add(ModItems.COMPACTED_COAL, 16000);
 	}

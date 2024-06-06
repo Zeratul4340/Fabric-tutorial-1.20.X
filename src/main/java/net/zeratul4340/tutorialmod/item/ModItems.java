@@ -31,7 +31,6 @@ public class ModItems {
             new SwordItem(ModToolMaterial.RUBY, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterial.RUBY, 6, -2.4f))));
 
-
     public static final Item RUBY_HELMET = registerItem("ruby_helmet",
             new ModArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(35))));
     public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate",
