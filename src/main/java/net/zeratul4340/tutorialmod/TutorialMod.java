@@ -7,6 +7,7 @@ import net.zeratul4340.tutorialmod.block.ModBlocks;
 import net.zeratul4340.tutorialmod.effect.ModEffects;
 import net.zeratul4340.tutorialmod.item.ModItemGroups;
 import net.zeratul4340.tutorialmod.item.ModItems;
+import net.zeratul4340.tutorialmod.sound.ModSounds;
 import net.zeratul4340.tutorialmod.util.ModLootTableModifiers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +26,7 @@ public class TutorialMod implements ModInitializer {
 		ModEffects.registerEffects();
 
 		ModLootTableModifiers.modifyLootTables();
+		ModSounds.registerSounds();
 
 		FuelRegistry.INSTANCE.add(ModItems.COMPACTED_COAL, 16000);
 	}

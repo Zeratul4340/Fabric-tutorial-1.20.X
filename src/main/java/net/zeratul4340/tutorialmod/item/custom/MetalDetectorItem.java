@@ -9,9 +9,11 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.zeratul4340.tutorialmod.sound.ModSounds;
 import net.zeratul4340.tutorialmod.util.ModTags;
 
 import java.util.List;
@@ -55,6 +57,10 @@ public class MetalDetectorItem extends Item {
                 stop iterating on hitting bedrock or void (probably useless)
                 */
                 if(hitBedrock(state)) {
+                    if (foundBlock){
+                        context.getWorld().playSound(null , positionClicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                                SoundCategory.BLOCKS, 1f, 1f);
+                    }
                     break;
                 }
             }
